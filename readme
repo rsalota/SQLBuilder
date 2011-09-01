@@ -1,0 +1,13 @@
+This project is about writing a SQLBuilder and is very useful when I am doing some testing. Typically I need to 
+write code that is very SQLish and hard to maintain. 
+
+A builder allows me to write code like 
+
+		insertBuilder.add("real", "networks");
+		insertBuilder.add("status", "approved");
+
+And then generate something like :
+                insert into TestTable (real, status) values ('networks', 'approved')
+
+It is easy to read and work with
+
